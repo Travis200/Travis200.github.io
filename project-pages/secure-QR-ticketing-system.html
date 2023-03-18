@@ -34,7 +34,7 @@
         <div id="description-header-text-container">
             <div class="header-text">
               <span class="main-title">Secure QR Ticket System</span>
-              <div class="date-text project-date">May 2021</div>  
+              <div class="date-text project-date">March 2023</div>  
             </div>
         </div>
       </div>
@@ -49,6 +49,26 @@
             <div class="body-text">The app implements RBAC. There are two types of users: admins and customers. If a user is an admin then they are directed to the QR code scanning page. This page allows a user to scan a QR code and then query the database to check if it is valid or not. If a user is a customer then they are directed to the home page where they can buy tickets or view their already existing tickets. In order to combat ticket reselling we implemented a system where data such as the timestamp of when the QR code is generated is encrypted in the QR code. Only a QR code generated in the last 60 seconds is deemed valid. This is to help prevent screenshots of tickets to resell them. Whenever a user clicks on their purchased tickets and opens an event, a new QR code for that ticket will be generated. To further help combat ticket reselling I also prevented screenshots from being taken on android devices.</div>
           </div>
       </div>
+
+      <div id="project-details">
+        <span class="subheader-text">Technologies Used</span>
+        <div class="project-details-content">
+        </div>
+        <div class="technologies">
+          <ul class="icon-list">
+            <li>Javascript</li>
+            <li>ReactNative</li>
+            <li>NodeJS</li>
+            <li>Firebase Auth</li>
+            <li>Firebase Firestore</li>
+            <li>Firebase Cloud Functions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="project-button-container">
+        <a href="nothing.com" class="button" type="button"><span class="button-text">GitHub Repository</span></a>
+      </div> -->
 
 
     <!-- FOOTER -->
