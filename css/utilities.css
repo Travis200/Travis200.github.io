@@ -19,6 +19,17 @@
   height: 20px;
 }
 
+a.icon-link {
+  transition: transform 200ms ease-in-out;
+}
+
+a.icon-link:hover {
+  cursor: pointer;
+  stroke-width: 5;
+  margin: 0;
+  rotate: 15deg;
+}
+
 
 /* Navbar Styling */
 
