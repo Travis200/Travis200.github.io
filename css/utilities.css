@@ -23,17 +23,6 @@ a.icon-link {
   transition: transform 200ms ease-in-out;
 }
 
-/*Only allows button rotation on devices with hover/mouse ability*/
-/* @media (hover: hover) { */
-  a.icon-link:hover {
-    cursor: pointer;
-    stroke-width: 5;
-    margin: 0;
-    rotate: 15deg;
-  }
-/* } */
-
-
 /* Navbar Styling */
 
 .navbar {
