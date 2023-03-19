@@ -91,11 +91,6 @@ body {
   border-radius: 20%;
 }
 
-
-
-
-
-
 /* About Section */
 
 #about-section {
@@ -147,6 +142,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 34px;
+      justify-content: space-around;
     }
 
     .project-card-text-container {
@@ -284,9 +280,4 @@ body {
   gap: 12px;
   margin-left: auto;
   margin-right: 0;
-}
-
-/* Remove Rotation for touch screen only devices*/
-@media (hover:none) {
-  a:hover {transform: none;}
 }
