@@ -192,18 +192,19 @@ body {
 
     #project-gallery {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 16px;
     }
 
     .project-gallery-content {
       display: flex;
-      flex-wrap: wrap;
       gap: 34px 16px;
+      flex-wrap: wrap;
     }
 
     .gallery-image-container {
-      width: 100%;
+      width: 304;
+      height: 640;
       display: flex;
       flex-direction: column;
       gap: 10px;
