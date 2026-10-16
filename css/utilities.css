@@ -110,6 +110,52 @@ a.button:hover {
   gap: 16px;
 }
 
+#skills-section {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 10px;
+  line-height: 1.5;
+}
+
+.skill-label {
+  color: #00ABE4;
+  font-weight: 700;
+  min-width: 170px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background-color: rgba(0, 171, 228, 0.1);
+  border: 1px solid rgba(0, 171, 228, 0.35);
+  color: #0d3b4d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 /* Link Styling */
 a.no-underline {
   text-decoration: none;
