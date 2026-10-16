@@ -121,6 +121,16 @@ a.no-underline:hover {
   cursor: pointer;
 }
 
+.body-text a {
+  color: #00ABE4;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.body-text a:hover {
+  color: #008ec4;
+}
+
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #footer {
