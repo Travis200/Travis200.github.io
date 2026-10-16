@@ -682,12 +682,19 @@ a.button.secondary-button:hover {
 
 #footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  width: 100%;
+  gap: 20px;
+  width: min(100% - 64px, 1180px);
+  margin: 0 auto 32px;
   padding: 24px 0 0;
   border-top: 1px solid var(--line);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #footer .icon-link {
@@ -705,12 +712,13 @@ a.button.secondary-button:hover {
 }
 
 .footer-text {
-  margin: 0 0 32px;
-  padding: 14px 0 0;
+  margin: 0;
+  padding: 0;
   color: var(--muted);
   font-size: 12px;
   font-weight: 500;
-  text-align: center;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .bolded {
@@ -753,6 +761,11 @@ a.button.secondary-button:hover {
     gap: 64px;
     width: calc(100% - 40px);
     margin: 48px auto 60px;
+  }
+
+  #footer {
+    width: calc(100% - 40px);
+    margin-bottom: 24px;
   }
 
   #portfolio-header {
@@ -831,6 +844,18 @@ a.button.secondary-button:hover {
   .gallery-image-container,
   .gallery-image-container.half-width {
     flex-basis: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  #footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-text {
+    text-align: left;
   }
 }
 
