@@ -1,17 +1,27 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nav-title {
-  font-weight: 700;
-  font-size: 24px;
-  color: #FFFFFF
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .button-text {
   font-size: 14px;
   font-weight: 700;
-  color: #FFFFFF
+  color: #FFFFFF;
+}
+
+.eyebrow {
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #00ABE4;
+  font-weight: 700;
 }
 
 .image-caption {
@@ -20,34 +30,53 @@ body {
 }
 
 .main-title {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #0f172a;
 }
 
 .subheader-text {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .body-text {
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
   font-weight: 500;
+}
+
+.body-text p {
+  margin: 0 0 1rem;
+}
+
+.body-text p:last-child {
+  margin-bottom: 0;
 }
 
 .date-text {
-  font-size: 16px;
-  font-weight: 500;
-  font-style: italic
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #64748b;
 }
 
 .footer-text {
-  font-size: 16px;
-  font-weight: 500;
-  align-self: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #475569;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 32px;
 }
 
 .bolded {
-  font-size:16px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -57,6 +86,8 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+  color: #475569;
+  line-height: 1.7;
 }
 
 .project-title {
@@ -65,4 +96,18 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  color: #0f172a;
+}
+
+.skill-label {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #00ABE4;
+}
+
+.skill-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
 }

@@ -3,39 +3,40 @@
 	<head>
 		<meta charset="utf-8">
 
-    <link rel="icon" href="./images/TH.png" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16.png">
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/favicons/apple-touch-icon.png">
 		<title>Travis Higgins</title>
     <meta name="description" content="A portfolio by Travis Higgins.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+		<link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 		<script defer src="./js/script.js"></script>
 	</head>
-	<body style="background-color:#E9F1FA">
+	<body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
-        <span class="nav-title">Travis Higgins' Portfolio</span>
-        
-        <div id="links">        
-          <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/travishiggins1/">
-            <image src="./assets/icons/linkedin_white.svg" class="navbar-icon"/>
-          </a>
-
-          <a class="icon-link" target="_blank" href="https://github.com/Travis200">
-            <image src="./assets/icons/github_white.svg" class="navbar-icon"/>
-          </a>
-
-          <a class="icon-link" href="mailto:travis.higgins2000@gmail.com">
-            <image src="./assets/icons/mail_white.svg" class="navbar-icon"/>
-          </a>
-        </div>
-
+        <span class="nav-title">Travis Higgins</span>
       </a>
+
+      <div id="links">
+        <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/travishiggins1/">
+          <image src="./assets/icons/linkedin_white.svg" class="navbar-icon"/>
+        </a>
+
+        <a class="icon-link" target="_blank" href="https://github.com/Travis200">
+          <image src="./assets/icons/github_white.svg" class="navbar-icon"/>
+        </a>
+
+        <a class="icon-link" href="mailto:travis.higgins2000@gmail.com">
+          <image src="./assets/icons/mail_white.svg" class="navbar-icon"/>
+        </a>
+      </div>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -44,49 +45,60 @@
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
-
-          <img src="./images/profile_pic.png" class="portfolio-header-image">
+          <img src="./images/travis_higgins.png" class="portfolio-header-image" alt="Portrait of Travis Higgins">
+          <div class="profile-badge">
+            <span class="badge-label">Based in</span>
+            <span class="badge-value">Manchester</span>
+          </div>
         </div>
 
         <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Travis Higgins</span>
-              <li>C#/.NET Backend Software Engineer</li>
-              <li>First Class MComp Hons in Computer Science (Integrated Masters)</li>
+          <div class="header-text">
+            <span class="eyebrow">Backend engineer • distributed systems • observability</span>
+            <span class="main-title">Travis Higgins</span>
+            <ul class="summary-list">
+              <li>C# .NET Software Engineer</li>
+              <li>First Class MComp Hons in Computer Science</li>
               <li>Graduated from Newcastle University</li>
-            </div>
+            </ul>
+          </div>
 
-            <div class="project-button-container">
-              <a class="button" id="my-work-link" type="button"><span class="button-text">Here are my projects</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-              <a href="assets/Travis-Higgins-CV.pdf" target="_blank" class="button" type="button"><span class="button-text">Here is my CV</span></a>
-            </div>
+          <div class="project-button-container">
+            <a class="button" id="my-work-link" type="button"><span class="button-text">Here are my projects</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+            <a href="assets/Travis-Higgins-CV.pdf" target="_blank" class="button secondary-button" type="button"><span class="button-text">Here is my CV</span></a>
+          </div>
         </div>
       </div>
 
-
       <div id="about-section">
-        <span class="subheader-text">About Me</span>
-        <div class="location">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Manchester</p>
+        <div class="section-header-row">
+          <span class="subheader-text">About Me</span>
         </div>
-        <div class="about-section-content">
-          <div class="body-text">
-            <p>I’m a C#/.NET backend software engineer with nearly three years’ experience in financial services. I delivered client-requested features and changes for an investment management platform’s Order Management System. I also built an internal RAG chatbot using Amazon Bedrock to make documentation easier to find, and migrated our monitoring, logging and alerting from Grafana, Prometheus and Loki to Splunk Observability Cloud, with Terraform-managed alerts to detect critical incidents earlier.</p>
+        <div class="about-card">
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Manchester / Newcastle</p>
+          </div>
+          <div class="about-section-content">
+            <div class="body-text">
+              <p>I’m a C#/.NET backend software engineer with nearly three years’ experience in financial services. I delivered client-requested features and changes for an investment management platform’s Order Management System. I also built an internal RAG chatbot using Amazon Bedrock to make documentation easier to find, and migrated our monitoring, logging and alerting from Grafana, Prometheus and Loki to Splunk Observability Cloud, with Terraform-managed alerts to detect critical incidents earlier.</p>
 
-            <p>I’m especially interested in distributed systems, observability and chaos engineering. I co-authored a short paper titled <a href="https://dl.acm.org/doi/10.1145/3625549.3658827" target="_blank" rel="noopener noreferrer">“Swarm Storm: An Automated Chaos Tool for Docker Swarm Applications”</a>, and presented the accompanying poster at HPDC 2024 in Pisa.</p>
+              <p>I’m especially interested in distributed systems, observability and chaos engineering. I co-authored a short paper titled <a href="https://dl.acm.org/doi/10.1145/3625549.3658827" target="_blank" rel="noopener noreferrer">“Swarm Storm: An Automated Chaos Tool for Docker Swarm Applications”</a>, and presented the accompanying poster at HPDC 2024 in Pisa.</p>
 
-            <p>I’m currently looking for my next engineering role in the Manchester area, and I’m open to opportunities both in and outside financial services.</p>
+              <p>I’m currently looking for my next engineering role in the Manchester area, and I’m open to opportunities both in and outside financial services.</p>
 
-            <p>Outside of work, I play the trumpet in a couple of bands and enjoy running, swimming and the gym.</p>
+              <p>Outside of work, I play the trumpet in a couple of bands and enjoy running, swimming and the gym.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div id="skills-section">
-        <span class="subheader-text">Skills</span>
+        <div class="section-header-row">
+          <span class="subheader-text">Skills</span>
+        </div>
         <div class="skills-list">
           <div class="skill-group">
             <span class="skill-label">Languages</span>
@@ -104,7 +116,7 @@
               <span class="skill-tag">REST APIs</span>
               <span class="skill-tag">gRPC</span>
               <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">MQTT pub-sub</span>
+              <span class="skill-tag">MQTT Pub-Sub</span>
             </div>
           </div>
           <div class="skill-group">
@@ -139,7 +151,7 @@
             <div class="skill-tags">
               <span class="skill-tag">CI/CD</span>
               <span class="skill-tag">Terraform</span>
-              <span class="skill-tag">Chaos engineering</span>
+              <span class="skill-tag">Chaos Engineering</span>
             </div>
           </div>
           <div class="skill-group">
@@ -192,7 +204,7 @@
             <img src="./assets/images/festival.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Secure Event Ticketing System</div>
-              <div class="date-text project-date">March 2023</div>
+              <div class="date-text project-date">March 2026</div>
               <div class="body-text project-card-text">A team project where a secure QR code ticketing solution is developed to prevent tickets from being stolen, counterfeited and also resold.
               </div>
             </div>
@@ -274,31 +286,6 @@
         </div>
       </div>
 
-      <!-- PROJECTS / MY WORK SECTION -->
-      <!-- <div id="my-work-section">
-        <span class="subheader-text">In Progress Projects</span>
-
-        <div class="projects-container">
-
-          <div class="project-card">
-            <img src="./assets/images/handwriting.jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Dissertation</div>
-              <div class="date-text project-date">2023 - Present</div>
-              <div class="body-text project-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti dolore rerum inventore? Facere sequi expedita ipsam? Velit nisi illo nostrum aliquam corporis facilis exercitationem, quasi autem quos accusantium natus.</div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <img src="http://via.placeholder.com/640x360" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project F</div>
-              <div class="date-text project-date">2023 - Present</div>
-              <div class="body-text project-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in sapiente nisi quas earum architecto et esse iusto maxime illo adipisci, vitae reprehenderit nobis modi quae dolorem saepe ipsum eligendi!</div>
-            </div>
-          </div>
-    </div> -->
-
     <!-- FOOTER -->
     <div id="footer">
 
@@ -316,7 +303,7 @@
 
     </div>
 
-    <p class="footer-text">Travis Higgins | 2023</p>
+    <p class="footer-text">Travis Higgins | 2026</p>
 
 	</body>
 </html>
