@@ -636,6 +636,30 @@ a.button.secondary-button:hover {
   gap: 24px;
 }
 
+.project-gallery-content.app-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 260px));
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+}
+
+.app-video-card {
+  width: 100%;
+  max-width: 260px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ink);
+  box-shadow: 0 12px 28px rgba(25, 37, 33, 0.12);
+  --plyr-color-main: var(--accent);
+  --plyr-video-aspect-ratio: 304 / 640;
+}
+
+.app-video-card .plyr__video-wrapper {
+  aspect-ratio: 304 / 640;
+}
+
 .gallery-image-container,
 .gallery-image-container.half-width {
   display: flex;

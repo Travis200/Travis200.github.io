@@ -12,10 +12,13 @@
     <meta name="description" content="A portfolio by Travis Higgins.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
 		<link rel="stylesheet" href="../css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 		<script defer src="../js/script.js"></script>
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script defer src="../js/project-video.js"></script>
 	</head>
 	<body>
     <!-- NAVBAR -->
@@ -56,21 +59,27 @@
         <span class="subheader-text">Description</span>
 
         <div class="project-details-content">
-          <div class="body-text">One of my projects outside of university was building a cross-platform mobile barbering application. A small student start-up approached me to develop the project. For this project, I led a small team consisting of three developers including myself. This application was developed using the Flutter framework with the Dart programming language and Firebase was used for the database. The app allows clients to see the location of local barbers through the integration of a google maps plugin, so that they can then book an appointment within the app. I contributed to all elements of the app development but my focus was predominantly on the front-end development. Unfortunately midway through the project, the client discontinued the project due to financial reasons. However, I have still gained valuable experience and insight into developing software for a client from this experience. If you are an employer and would like to see the source code for this project then contact me via email, and I will be able to send it to you.</div>
+          <div class="body-text">One of my projects outside of university was building a cross-platform mobile barbering application. A small student start-up approached me to develop the project. For this project, I led a small team consisting of three developers including myself. This application was developed using the Flutter framework with the Dart programming language and Firebase was used for the database. The app allows clients to see the location of local barbers through the integration of a google maps plugin, so that they can then book an appointment within the app. I contributed to all elements of the app development but my focus was predominantly on the front-end development. Unfortunately midway through the project, the client discontinued the project due to financial reasons. However, I have still gained valuable experience and insight into developing software for a client from this experience.</div>
           </div>
 
           <span class="subheader-text">App Demonstration</span>
 
-          <div class="project-gallery-content">
-            <video class="gallery-image-container" width="304" height="640" controls>
-              <source src="../assets/videos/barbering_app1.mp4" type="video/mp4"></video>
-            </video>
-            <video class="gallery-image-container" width="304" height="640" controls>
-              <source src="../assets/videos/barbering_app2.mp4" type="video/mp4"></video>
-            </video>
-            <video class="gallery-image-container" width="304" height="640" controls>
-              <source src="../assets/videos/barbering_app3.mp4" type="video/mp4">
-            </video>
+          <div class="project-gallery-content app-video-grid">
+            <div class="app-video-card">
+              <video class="js-player" width="304" height="640" controls playsinline preload="metadata" aria-label="Mobile barbering app demonstration video 1">
+                <source src="../assets/videos/barbering_app1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="app-video-card">
+              <video class="js-player" width="304" height="640" controls playsinline preload="metadata" aria-label="Mobile barbering app demonstration video 2">
+                <source src="../assets/videos/barbering_app2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="app-video-card">
+              <video class="js-player" width="304" height="640" controls playsinline preload="metadata" aria-label="Mobile barbering app demonstration video 3">
+                <source src="../assets/videos/barbering_app3.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
 
           <div id="project-details">
